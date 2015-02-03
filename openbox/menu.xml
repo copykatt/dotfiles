@@ -1,0 +1,339 @@
+<!-- 
+     file: ~/.config/openbox/menu.xml
+     author: copykatt <copykatt@8chan.co>
+     license: none, you may do as you wish
+     last modified: 2014-12-15 3:51:15 AM
+      
+     todo: 
+        add: 
+            * multimedia: convert all files in directory to {mp4, ...}
+            * to convert from gif to webm
+            * multimedia: call playlist of all files to be played in mpv
+            * general: bash script to show calendar 
+            * scrot 5s, 10s
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:SchemaLocation="http://openbox.org/">
+    <menu id="root-menu" label="Openbox 3.5">
+        <menu id="file managers" label="File Managers">
+            <item label="thunar">
+                <action name="Execute">
+                    <command>
+                        thunar
+                    </command>
+                </action>
+             </item>
+        </menu>
+        <item label="lxterminal">
+            <action name="Execute">
+                <command>
+                    lxterminal 
+                </command>
+            </action>
+        </item>
+        <item label="termite">
+            <action name="Execute">
+                <command>
+                    termite
+                 </command>
+             </action>
+        </item>
+        <item label="scrot 5s">
+            <action name="Execute">
+            </action>
+        </item>
+        <item label="archey">
+            <action name="Execute">
+                <command>
+                    termite  -e "archey3"
+                </command>
+            </action>
+        </item>
+        <item label="wallpaper">
+            <action name="Execute">
+                <command>
+                    nitrogen
+                </command>
+            </action>
+        </item>
+      <separator/> 
+      <menu id="browsers" label="Browsers">
+        <item label="firefox">
+            <action name="Execute">
+                <command>
+                    firefox
+                </command>
+            </action>
+         </item>
+        <item label="tor-browser">
+            <action name="Execute">
+                <command>
+                    tor-browser-en
+                </command>
+            </action>
+        </item>
+    </menu>
+    <menu id="chat" label="Chat">
+        <item label="pidgin">
+            <action name = "Execute">
+                <command>
+                    pidgin
+                </command>
+            </action>
+        </item>
+        <item label="skype">
+            <action name="Execute">
+                <command>
+                    skype
+                </command>
+            </action>
+       </item>
+    </menu>
+    
+    <menu id="network" label="Network"> 
+        <item label="thunderbird">
+            <action name="Execute">
+                <command>
+                    thunderbird
+                </command>
+            </action>
+        </item>
+        <item label="putty">
+            <action name="Execute">
+                <command>
+                    putty
+                </command>
+            </action>
+        </item>
+        <item label="mutt">
+            <action name="Execute">
+                <command>
+                    mutt
+                </command>
+            </action>
+         </item>
+        <item label="wiface watch">
+            <action name="Execute">
+                <command>
+                    termite -e "watch -n2 cat /proc/net/wireless"
+                </command>
+            </action>
+        </item>
+      <!-- extend -->     
+    </menu>
+    <menu id="dogecoin" label="Dogecoin">
+        <item id="multidoge" label="MultiDoge">
+            <action name="Execute">
+                <command>
+                    multidoge
+                </command>
+            </action>
+        </item>
+    </menu>
+    <menu id="multimedia" label="Multimedia">
+      <!-- add ffmpeg convert, mpv playlist scripts -->
+        <menu id="image" label="Image">
+            <menu id="image viewers" label="Image Viewers">
+            
+            </menu>
+            <menu id="graphics and image manipulation" label="Graphics and Image Manipulation">
+                
+            </menu>
+            <menu id="screen capture" label="Screen Capture">
+            </menu>
+         </menu>
+       <menu id="audio" label="Audio">
+            <menu id="audio players" label="Audio Players">
+                <menu id="gui players" label="GUI Players">
+                  <item id="vlc" label="vlc">
+                     <action name="Execute">
+                         <command>
+                             vlc
+                         </command>
+                     </action>
+                  </item>
+                  <item id="amarok" label="Amarok">
+                      <action name="Execute">
+                          <command>
+                              amarok
+                          </command>
+                      </action>
+                  </item>
+                  <item id="clementine" label="clementine">
+                      <action name="Execute">
+                          <command>
+                              clementine
+                          </command>
+                       </action>
+                  </item>
+                </menu>
+            </menu>
+            <menu id="audio tag editors" label="Audio Tag Editors">
+                <item id="cowbell" label="Cowbell">
+                    <action name="Execute">
+                        <command>
+                            cowbell
+                        </command>
+                    </action>
+               </item>
+           </menu>
+       </menu>
+       <menu id="video" label="Video">
+          <menu id="graphical video players" label="Graphical Video Players">
+              <item id="totem" label="Totem">
+                  <action name="Execute">
+                      <command>
+                          totem
+                      </command>
+                  </action>
+               </item>
+          </menu>
+       </menu> 
+
+        <item label="steam">
+            <action name="Execute">
+                <command>
+                    steam
+                </command>
+            </action>
+        </item>
+
+    </menu>
+    <menu id="graphic editors" label="Graphic Editors">
+        <item label="leafpad">
+            <action name="Execute">
+                <command>
+                    leafpad
+                </command>
+            </action>
+        </item>
+        <item label="mousepad">
+            <action name="Execute">
+                <command>
+                    mousepad
+                </command>
+            </action>
+        </item>
+        <item label="gvim">
+            <action name="Execute">
+                <command>
+                    gvim
+                </command>
+            </action>
+         </item>
+    </menu> 
+    <menu id="IDEs" label="IDEs">
+        <item label="geany">
+            <action name="Execute">
+                <command>
+                    geany
+                </command>
+            </action>
+        </item>
+        <item label="eclipse">
+            <action name="Execute">
+                <command>
+                    eclipse
+                </command>
+            </action>
+        </item>
+        <item label="netbeans">
+            <action name="Execute">
+                <command>
+                    /bin/zsh "~/netbeans-8.0.2/bin/netbeans"
+                </command>
+            </action>
+        </item>
+    </menu>
+    <menu id="painting" label="Painting">
+        <item label="gimp">
+          <action name="Execute">
+              <command>
+                  gimp
+              </command>
+          </action>
+       </item>
+    </menu>
+    <menu id="dotfiles" label="dotfiles">
+        <item label="vimrc">
+            <action name="Execute">
+                <command>
+                    termite -e "vim ~/.vimrc"
+                </command>
+             </action>
+        </item>
+        <item label="zshrc">
+            <action name="Execute">
+                <command>
+                    termite -e "vim ~/.zshrc"
+                </command>
+            </action>
+        </item>
+        <item label="bashrc">
+            <action name="Execute">
+                <command>
+                    termite -e "vim ~/.bashrc"
+                </command>
+            </action>
+        </item>
+        <item label="tmux">
+            <action name="Execute">
+                <command>
+                    termite -e "vim ~/.tmux.conf"
+                </command>
+            </action>
+        </item>
+        <item label="rainbarf">
+            <action name="Execute">
+                <command>
+                    termite -e "vim ~/.rainbarf.conf"
+                </command>
+            </action>
+        </item>
+        <item label="tint2">
+          <action name="Execute">
+              <command>
+                  termite -e "vim ~/.config/tint2/tint2rc"
+              </command>
+           </action>
+        </item>
+    </menu>
+    <separator/>
+    <menu id="exit" label="exit">
+            <item label="logout">
+                <action name="Exit"/>
+            </item>
+            <item label="restart">
+                <action name="Restart"/>
+            </item>
+            <item label="shutdown">
+                <action name="Execute">
+                    <command>
+                        sudo shutdown -h now
+                    </command>
+                </action>
+            </item>
+            <item label="reboot">
+                <action name="Execute">
+                    <command>
+                        sudo shutdown -r now
+                    </command>
+                </action>
+            </item>
+            <item label="suspend">
+                <action name="Execute">
+                    <command>
+                        sudo pm-suspend
+                    </command>
+                </action>
+            </item>
+            <item label="hibernate">
+                <action name="Execute">
+                    <command>
+                        sudo pm-hibernate
+                    </command>
+                </action>
+            </item>
+        </menu>
+    </menu>          
+</openbox_menu>
