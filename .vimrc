@@ -44,7 +44,7 @@ end
 "endif
 
 colorscheme koehler
-se background=dark
+set background=dark
 
 set encoding=utf8 
 set ffs=unix,dos,mac "unix is standard filetype
