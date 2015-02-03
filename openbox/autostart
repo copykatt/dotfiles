@@ -1,15 +1,9 @@
 # openbox autostart file
-# modified by nmr
-
-# panel, already in .xprofile 
-#tint2 &
-
-# wapplapeer
-nitrogen --restore &
+# last modified by copykatt 2015-02-03 
 
 # start lxterminal transparent on screen using obconf
 lxterminal --geometry=125x100 &
 
 setxkbmap -layout ch & 
 
-skype &
+pidgin & 
