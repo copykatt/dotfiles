@@ -1,9 +1,12 @@
-# My bashrc, modified by copykatt [Fri. 19. Jul, 2013]
+# My bashrc, modified by feynman [Fri. 19. Jul, 2013]
 # ~/.bashrc
 #
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+
+# Javac
+export PATH=/usr/local/bin/javac/bin:$PATH
 
 # rails
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
@@ -68,6 +71,7 @@ alias wl="wc -l"
 alias p="$PWD"
 #Folders sorted by disk usage
 alias folders='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn'
+alias tcpdump="/usr/bin/tcpdump -i wlan0"
 ###################################################################################################
 # History control (10,000 lines of history) run with: history | grep foo
 export HISTFILESIZE=20000
